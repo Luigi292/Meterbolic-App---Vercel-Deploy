@@ -1,6 +1,7 @@
-import styles from '../styles/Footer.module.css'; // Create this CSS module
-import Link from 'next/link';
+'use client';
 
+import styles from '../styles/Footer.module.css';
+import Link from 'next/link';
 
 export default function Footer() {
   return (

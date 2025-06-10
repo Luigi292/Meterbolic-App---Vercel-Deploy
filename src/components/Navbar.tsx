@@ -1,7 +1,9 @@
+'use client';
+
 import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import styles from '../styles/Navbar.module.css'; // Create this CSS module
+import styles from '../styles/Navbar.module.css';
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

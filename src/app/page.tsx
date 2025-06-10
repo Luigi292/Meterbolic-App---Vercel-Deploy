@@ -1,3 +1,5 @@
+'use client';
+
 import { useState } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
@@ -6,7 +8,6 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
 export default function Home() {
-  // Add state management for the mobile menu
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -21,8 +22,6 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-
-      {/* Navbar */}
       <Navbar />
 
       {/* Hero Section */}
@@ -38,7 +37,6 @@ export default function Home() {
           <button className={`${styles.button} ${styles.primaryButton}`}>Learn More</button>
         </div>
       </section>
-
 
       {/* Banner Section */}
       <section className={styles.banner}>
@@ -61,7 +59,6 @@ export default function Home() {
         </div>
       </section>
 
-
       {/* Glucose Insight Section */}
       <section className={styles.glucoseInsight}>
         <div className={styles.glucoseContainer}>
@@ -70,7 +67,7 @@ export default function Home() {
             <p>
               Insulin resistance begins long before blood glucose levels show any signs of trouble. In fact, insulin is the first to break down—often years before glucose levels rise. This means standard glucose tests can appear normal while insulin resistance silently develops. By the time glucose levels increase, significant metabolic damage has already occurred.
             </p>
-<button className={`${styles.button} ${styles.primaryButton}`}>Learn More</button>
+            <button className={`${styles.button} ${styles.primaryButton}`}>Learn More</button>
           </div>
           <div className={styles.glucoseImage}>
             <Image 
@@ -79,13 +76,12 @@ export default function Home() {
               width={500}
               height={500}
               quality={100}
-              />
+            />
           </div>
         </div>
       </section>
-      
 
-      {/* Journey Section with Larger Images */}
+      {/* Journey Section */}
       <section className={styles.journey}>
         <div className={styles.journeyOverlay}></div>
         <div className={styles.journeyContainer}>
@@ -147,19 +143,19 @@ export default function Home() {
             <h2>Reveal The Truth About Your Health</h2>
             
             <div className={styles.textColumns}>
-  <div className={styles.textColumn}>
-    <p>
-      You're not lazy. You're not broken. You're likely metabolically stuck. 
-      Metabolic dysfunction is a silent epidemic — impacting fat storage, sleep, and thinking.
-    </p>
-  </div>
-  <div className={styles.textColumn}>
-    <p>
-      It affects how we age, long before diabetes strikes. 
-      Your body's already showing signs — and the Kraft Test can catch them before it's too late.
-    </p>
-  </div>
-</div>
+              <div className={styles.textColumn}>
+                <p>
+                  You're not lazy. You're not broken. You're likely metabolically stuck. 
+                  Metabolic dysfunction is a silent epidemic — impacting fat storage, sleep, and thinking.
+                </p>
+              </div>
+              <div className={styles.textColumn}>
+                <p>
+                  It affects how we age, long before diabetes strikes. 
+                  Your body's already showing signs — and the Kraft Test can catch them before it's too late.
+                </p>
+              </div>
+            </div>
 
             <div className={styles.featureList}>
               <div className={styles.featureItem}>
@@ -192,7 +188,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Health Longevity Section with Image */}
+      {/* Health Longevity Section */}
       <section className={styles.healthLongevity}>
         <div className={styles.healthLongevityOverlay}></div>
         <div className={styles.healthLongevityContainer}>
@@ -221,9 +217,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-      
 
-      {/* Info Cards Section with Larger Icons */}
+      {/* Info Cards Section */}
       <section className={styles.infoCards}>
         <div className={styles.infoCardsContainer}>
           <div className={styles.infoCard}>
@@ -356,10 +351,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Footer */}
       <Footer />
-
-
     </div>
   );
 }
