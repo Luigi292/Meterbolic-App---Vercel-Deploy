@@ -29,28 +29,8 @@ body {
   background-color: #FFFFFF;
 }
 
-.container {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
 
 
-h1, h2, h3, h4 {
-  font-family: var(--font-heading);
-  font-weight: 600;
-  line-height: 1.2;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
 
 /* In your global.css or styles/globals.css */
 /* Button Styles */
@@ -94,20 +74,3 @@ img {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-/* Force override any conflicting styles */
-button.button {
-  all: unset;
-  display: inline-flex !important;
-  justify-content: center !important;
-  align-items: center !important;
-  padding: 12px 24px !important;
-  font-family: Arial, sans-serif !important;
-  font-weight: 700 !important;
-  font-size: 16px !important;
-  line-height: 18px !important;
-  border-radius: 8px !important;
-  cursor: pointer !important;
-  transition: all 0.3s ease !important;
-  height: 43px !important;
-  box-sizing: border-box !important;
-}
