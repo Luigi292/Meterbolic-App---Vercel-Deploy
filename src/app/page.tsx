@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../styles/Home.module.css';
@@ -9,10 +9,19 @@ import Footer from '../components/Footer';
 
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+
+  if (!isMounted) {
+    return null;
+  }
 
   return (
     <div className={styles.container}>
