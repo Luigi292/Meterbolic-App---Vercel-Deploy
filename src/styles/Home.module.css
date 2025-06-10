@@ -1,0 +1,1085 @@
+/* Container */
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+
+/* In your global.css or styles/globals.css */
+/* Button Styles */
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 24px;
+  font-family: Arial, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  height: 43px;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.primaryButton {
+  background: #8EB205;
+  color: #FFFFFF;
+}
+
+.primaryButton:hover {
+  background: #7a9a04;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.secondaryButton {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.secondaryButton:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 800px;
+  display: flex;
+  margin-top: 5%;
+  align-items: center;
+  padding: 0 5%;
+  color: #FFFFFF;
+  background: linear-gradient(rgba(186, 39, 39, 0.1)), 
+              url('/images/header-pict.jpg') center/cover no-repeat;
+}
+
+.heroOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(6, 64, 52, 0.2);
+}
+
+.heroContent {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  margin-left: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.hero h1 {
+  font-size: 4.5rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
+  line-height: 1.2;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.hero p {
+  font-size: 1.4rem;
+  line-height: 1.8;
+  margin-bottom: 3rem;
+  opacity: 0.9;
+  max-width: 700px;
+}
+
+/* Banner Section */
+.banner {
+  width: 100%;
+  padding: 3rem 0;
+  background: #FFFFFF;
+  overflow: hidden;
+}
+
+.bannerContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 0 5%;
+  flex-wrap: nowrap;
+}
+
+.bannerImage {
+  display: flex;
+  max-width: 100%;
+  align-items: center;
+  padding: 0 1.5rem;
+}
+
+.bannerImage img {
+  width: auto;
+  object-fit: contain;
+}
+
+/* Glucose Insight Section */
+.glucoseInsight {
+  width: 100%;
+  background-color: #F8F8F8;
+}
+
+.glucoseContainer {
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.glucoseContent {
+  flex: 1;
+  width: 100%;
+  margin-left: 10%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-right: -10%;
+}
+
+.glucoseContent h2 {
+  font-size: 4rem;
+  font-weight: 800;
+  color: #064034;
+  margin-bottom: 3rem;
+  width: 100%;
+  line-height: 1.3;
+}
+
+.glucoseContent p {
+  font-size: 1.4rem;
+  width: 100%;
+  line-height: 1.8;
+  margin-bottom: 3rem;
+  color: #333333;
+}
+
+.glucoseImage {
+  min-height: 1100px;
+  position: relative;
+}
+
+.glucoseImage img {
+  width: 1100px;
+  height: 1100px;
+  margin-left: -5%;
+  object-fit: contain;
+}
+
+/* Journey Section */
+.journey {
+  position: relative;
+  width: 100%;
+  padding: 8rem 5%;
+  background-color: #064034;
+  color: #FFFFFF;
+}
+
+.journeyOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(6, 64, 52, 0.8);
+}
+
+.journeyContainer {
+  position: relative;
+  z-index: 2;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.journeyContent {
+  text-align: center;
+}
+
+.journeyContent h2 {
+  font-size: 4rem;
+  font-weight: 800;
+  margin-bottom: 6rem;
+}
+
+.journeySteps {
+  display: flex;
+  justify-content: space-between;
+  gap: 8rem;
+}
+
+.step {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 2rem 1rem;
+  border-left: 4px solid #8EB205;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.stepImage {
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.stepImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.stepNumber {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #8EB205;
+  margin-bottom: 1.5rem;
+}
+
+.step h3 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #8EB205;
+}
+
+.step p {
+  font-size: 1.5rem;
+  line-height: 1.8;
+  opacity: 0.9;
+}
+
+/* Features Section */
+.features {
+  width: 100%;
+  padding: 5rem 5%;
+  background-color: #FFFFFF;
+}
+
+.featuresContainer {
+  max-width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  gap: 5rem;
+  padding-top: 3%;  
+  padding-bottom: 3%;
+}
+
+.featuresContent {
+  flex: 1.5;
+  width: 100%;
+}
+
+.featuresImage {
+  flex: 0.8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.featuresImage img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  object-fit: contain;
+  transform: scale(1.1);
+  margin-top: 30%;
+  margin-left: 25%;
+  margin-right: -2rem;
+}
+
+.sectionTag {
+  display: inline-block;
+  color: #8EB205;
+  font-weight: 700;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 1.5rem;
+}
+
+.features h2 {
+  font-size: 4rem;
+  font-weight: 800;
+  margin-bottom: 3rem;
+  color: #064034;
+}
+
+.textColumns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  margin-bottom: 3rem;
+  width: 100%;
+}
+
+.textColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.features p {
+  font-size: 1.5rem;
+  line-height: 1.8;
+  color: #333333;
+}
+
+.featureList {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.featureItem {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.5rem;
+}
+
+.featureIcon {
+  color: #8EB205;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+/* Health Longevity Section */
+.healthLongevity {
+  position: relative;
+  width: 100%;
+  height: auto;
+  color: #FFFFFF;
+  background-color: #064034;
+  padding: 6rem 5%;
+}
+
+.healthLongevityContainer {
+  max-width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  gap: 8rem;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.healthLongevityImage {
+  flex: 0.7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.healthLongevityImage img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  object-fit: contain;
+  transform: scale(0.9);
+  margin-right: -3rem;
+}
+
+.healthLongevityContent {
+  flex: 1.3;
+  width: 100%;
+  padding-left: 2rem;
+}
+
+.healthLongevity h2 {
+  font-size: 4rem;
+  font-weight: 800;
+  margin-bottom: 3rem;
+}
+
+.healthLongevity p {
+  font-size: 1.5rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+/* Info Cards Section */
+.infoCards {
+  width: 100%;
+  padding: 8rem 5%;
+  background-color: #FFFFFF;
+}
+
+.infoCardsContainer {
+  max-width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+  padding-top: 3%;  
+  padding-bottom: 3%;
+}
+
+.infoCard {
+  background: #FFFFFF;
+  border: 1px solid #E5E7EB;
+  border-radius: 12px;
+  padding: 4rem 2.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.infoCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.infoCardIcon {
+  margin-bottom: 3rem;
+  font-size: 1.5rem;
+  color: #8EB205;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.infoCard h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #064034;
+}
+
+.infoCard p {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  color: #666666;
+}
+
+/* Stay in Touch Section */
+.stayInTouch {
+  width: 100%;
+  padding: 8rem 5%;
+  background-color: #064034;
+  color: #FFFFFF;
+}
+
+.stayInTouchContainer {
+  max-width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 6rem;
+  margin-left: 10%;
+}
+
+.stayInTouchContent {
+  flex: 1;
+}
+
+.stayInTouchImage {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stayInTouchImage img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  object-fit: contain;
+}
+
+.stayInTouchTitle {
+  font-size: 4rem;
+  font-weight: 800;
+  margin-bottom: 3rem;
+}
+
+.stayInTouchText {
+  font-size: 2rem;
+  line-height: 1.8;
+  margin-bottom: 3rem;
+  opacity: 0.9;
+  margin-right: 15%;
+}
+
+.stayInTouchForm {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 600px;
+}
+
+.stayInTouchInput {
+  padding: 1.2rem 1.5rem;
+  border-radius: 8px;
+  border: none;
+  font-size: 1.3rem;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.stayInTouchInput::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.stayInTouchButton {
+  padding: 1.2rem 2.5rem;
+  border-radius: 8px;
+  background: #6FDC00;
+  color: white;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1.5rem;
+}
+
+.stayInTouchButton:hover {
+  background: #5CBA00;
+}
+
+/* Testimonials Section */
+.testimonials {
+  width: 100%;
+  padding: 8rem 5%;
+  background-color: #F8F8F8;
+}
+
+.testimonialsTitle {
+  font-size: 4rem;
+  font-weight: 800;
+  margin-bottom: 6rem;
+  text-align: center;
+  color: #064034;
+}
+
+.testimonialsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.testimonialCard {
+  background: #FFFFFF;
+  border-radius: 12px;
+  padding: 4rem 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.testimonialCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.testimonialImage {
+  margin-bottom: 2rem;
+}
+
+.testimonialAvatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.testimonialText {
+  font-size: 1.5rem;
+  line-height: 1.8;
+  color: #333333;
+  margin-bottom: 2rem;
+  font-style: italic;
+}
+
+.testimonialAuthor {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #064034;
+  margin-bottom: 0.5rem;
+}
+
+.testimonialRole {
+  font-size: 1.3rem;
+  color: #666666;
+}
+
+/* Responsive Design */
+@media (max-width: 1600px) {
+  .journeySteps {
+    justify-content: center;
+  }
+
+  .stayInTouchContainer {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    flex-direction: column;
+    text-align: center;
+    gap: 3rem;
+  }
+
+  .stayInTouchText {
+    margin-right: 0;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .glucoseImage {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .healthLongevityImage img {
+    max-height: 500px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .bannerContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    justify-items: center;
+  }
+  
+  .bannerImage:nth-child(5) {
+    grid-column: 1 / -1;
+  }
+  
+  .featuresContent,
+  .healthLongevityContent,
+  .stayInTouchContent {
+    text-align: center;
+    margin: 0 !important;
+  }
+
+  .textColumns {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .featureList {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  
+  .healthLongevityImage img {
+    max-height: 400px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 0;
+  }
+  
+  .hero {
+    height: auto;
+    min-height: 800px;
+    padding: 6rem 5%;
+    text-align: center;
+  }
+  
+  .heroContent {
+    margin-left: 0;
+    max-width: 100%;
+  }
+  
+  .hero h1 {
+    font-size: 2.8rem;
+    line-height: 1.2;
+  }
+  
+  .hero h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin: 0 auto 2rem;
+    max-width: 90%;
+  }
+  
+  .bannerContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    padding: 1rem 5%;
+  }
+  
+  .bannerImage {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+  }
+  
+  .bannerImage img {
+    width: auto;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+  
+  .glucoseContainer,
+  .healthLongevityContainer,
+  .stayInTouchContainer {
+    flex-direction: column;
+    padding: 3rem 5%;
+    gap: 3rem;
+  }
+  
+  .featuresContainer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .featuresImage {
+    order: -1;
+    justify-content: center;
+    margin-bottom: 2rem;
+    margin-left: 15%;
+  }
+
+  .featuresImage img {
+    margin: 0 auto;
+    transform: scale(1);
+    max-width: 100%;
+  }
+
+  .textColumns {
+    grid-template-columns: 1fr;
+  }
+
+  .featureList {
+    grid-template-columns: 1fr;
+  }
+  
+  .glucoseContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .glucoseImage {
+    order: -1;
+    min-height: auto;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0;
+  }
+  
+  .glucoseImage img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: 0 auto;
+  }
+  
+  .glucoseContent {
+    margin: 2rem 0 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .featuresContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .featuresImage {
+    order: -1;
+    min-height: auto;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0;
+  }
+  
+  .featuresImage img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: 0 auto;
+  }
+  
+  .featuresContent {
+    margin: 2rem 0 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .textColumns {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .healthLongevityContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .healthLongevityImage {
+    order: -1;
+    min-height: auto;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0;
+  }
+  
+  .healthLongevityImage img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: 0 auto;
+  }
+  
+  .healthLongevityContent {
+    margin: 2rem 0 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .stayInTouchContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .stayInTouchImage {
+    order: -1;
+    min-height: auto;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0;
+  }
+  
+  .stayInTouchImage img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: 0 auto;
+  }
+  
+  .stayInTouchContent {
+    margin: 2rem 0 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .glucoseContent h2,
+  .features h2,
+  .healthLongevity h2,
+  .journeyContent h2,
+  .stayInTouchTitle,
+  .testimonialsTitle {
+    font-size: 2.4rem;
+    line-height: 1.3;
+    margin-bottom: 1.5rem;
+  }
+  
+  .glucoseContent p,
+  .features p,
+  .healthLongevity p,
+  .stayInTouchText,
+  .testimonialText {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+  
+  .featureList {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    justify-items: center;
+    margin-top: 2rem;
+  }
+  
+  .journeySteps {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .step {
+    padding: 2rem;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .infoCardsContainer {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  
+  .infoCard {
+    padding: 2rem;
+  }
+  
+  .testimonialsGrid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .bannerContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .infoCardsContainer {
+    grid-template-columns: 1fr;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero h2 {
+    font-size: 1.8rem;
+  }
+  
+  .glucoseContent h2,
+  .features h2,
+  .healthLongevity h2,
+  .journeyContent h2,
+  .stayInTouchTitle,
+  .testimonialsTitle {
+    font-size: 2rem;
+  }
+  
+  .glucoseImage img,
+  .featuresImage img,
+  .healthLongevityImage img,
+  .stayInTouchImage img {
+    max-width: 350px;
+  }
+  
+  .step {
+    max-width: 400px;
+  }
+  
+  .glucoseContent,
+  .featuresContent,
+  .healthLongevityContent,
+  .stayInTouchContent,
+  .testimonialCard {
+    text-align: center;
+  }
+  
+  .journeyContent h2,
+  .features h2,
+  .healthLongevity h2,
+  .testimonialsTitle,
+  .stayInTouchTitle {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .bannerContainer {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .bannerImage {
+    height: 50px;
+  }
+  
+  .hero {
+    min-height: 500px;
+    padding: 4rem 5%;
+  }
+  
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+  
+  .hero h2 {
+    font-size: 1.6rem;
+  }
+  
+  .glucoseContent h2,
+  .features h2,
+  .healthLongevity h2,
+  .journeyContent h2,
+  .stayInTouchTitle,
+  .testimonialsTitle {
+    font-size: 1.8rem;
+  }
+  
+  .button {
+    padding: 0.7rem 1.2rem;
+    font-size: 1.1rem;
+  }
+  
+  .glucoseImage img,
+  .featuresImage img,
+  .healthLongevityImage img,
+  .stayInTouchImage img {
+    max-width: 300px;
+  }
+  
+  .step {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+  
+  .hero h2 {
+    font-size: 1.4rem;
+  }
+  
+  .glucoseImage img,
+  .featuresImage img,
+  .healthLongevityImage img,
+  .stayInTouchImage img {
+    max-width: 250px;
+  }
+}
